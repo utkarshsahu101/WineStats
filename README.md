@@ -6,3 +6,15 @@
 
 #### Mobile View
 ![localhost_3000_](https://user-images.githubusercontent.com/42902745/231891745-6a3576d2-57d9-415b-bf00-ce8f8833d61f.png)
+
+
+## Installation
+
+App requires Node & yarn to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+npm i
+yarn start
+```
