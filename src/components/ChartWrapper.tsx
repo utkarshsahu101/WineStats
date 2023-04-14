@@ -40,10 +40,34 @@ const ChartWrapper = () => {
     };
     return option;
   };
+  const groupBy = (array: any, key: any) => {
+    // Return the end result
+    return array.reduce((result: any, currentValue: any) => {
+      // If an array already present for key, push it to the array. Else create an array and push the object
+      (result[currentValue[key]] = result[currentValue[key]] || []).push(
+        currentValue
+      );
+      // Return the current iteration `result` value, this will be taken as next iteration `result` value and accumulate
+      return result;
+    }, {}); // empty object is the initial value for result object
+  };
+
   const getBarData = () => {
     let xAxisData: Array<string | number> = [];
     let yAxisData: Array<string | number> = [];
-    wineData.forEach((wine) => {
+
+    // Group by color as key to the person array
+    const dataGroupedByAlcohol = groupBy(wineData, "Alcohol");
+    console.log("dataGroupedByAlcohol", dataGroupedByAlcohol);
+    let updatedWineData: any[] = [];
+    Object.keys(dataGroupedByAlcohol).forEach((alcoholValue) => {
+      const item = dataGroupedByAlcohol[alcoholValue].reduce((a: any, b: any) =>
+        a["Magnesium"] < b["Magnesium"] ? a : b
+      );
+      updatedWineData.push(item);
+    });
+
+    updatedWineData.forEach((wine) => {
       xAxisData.push(parseFloat(String(wine?.Alcohol)));
       yAxisData.push(parseFloat(String(wine?.Magnesium)));
     });
