@@ -1,12 +1,14 @@
 # Data Visualization
 
 #### Desktop View
-![localhost_3000_ (2)](https://user-images.githubusercontent.com/42902745/231891716-5ccf44ca-e14d-4676-818a-7811245ba868.png)
-![localhost_3000_ (1)](https://user-images.githubusercontent.com/42902745/231891736-f60951b0-c84b-4250-a200-8c6a02c01a9b.png)
+![laptop](https://user-images.githubusercontent.com/42902745/232184969-acb519c6-a3da-4159-918b-851f7fac63c7.png)
+![Laptop2](https://user-images.githubusercontent.com/42902745/232184974-a60a705c-ab76-4ab9-aef4-39fc88bfe48a.png)
+
+#### Tablet View
+![Tablet](https://user-images.githubusercontent.com/42902745/232185061-5fdaaddb-ff9f-4db7-b5b3-7c8fc16d7433.png)
 
 #### Mobile View
-![localhost_3000_](https://user-images.githubusercontent.com/42902745/231891745-6a3576d2-57d9-415b-bf00-ce8f8833d61f.png)
-
+![Mobile](https://user-images.githubusercontent.com/42902745/232185086-68a5d99f-567d-46d0-9e38-c8f4289bc8f9.png)
 
 ## Installation
 
